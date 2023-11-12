@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TP Integrador Front</title>
+    <link rel="icon" href="images/codoacodo.png" sizes="16x16 32x32" type="image/png" alt="icono">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  </head>
+  <script src="js/script.js"></script>
+    <body>
+      <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+      </div>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid ">
+        <a class="navbar-brand text-white href="#">
+          <img class="w-25" src="./images/codoacodo.png" />
+          <p class="d-none d-md-inline-flex align-self-center">Conf Bs As</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>         
+        <div id="menu" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item text-secondary m-auto">
+              <a class="nav-link" href="#">La conferencia</a>
+            </li>
+            <li class="nav-item text-secondary m-auto">
+              <a class="nav-link" href="#oradores">Los oradores</a>
+            </li>
+            <li class="nav-item text-secondary m-auto">
+              <a class="nav-link" href="#">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item text-secondary m-auto">
+              <a class="nav-link" href="#orador">Conviértete en orador</a>
+            </li>
+            <li class="nav-item text-secondary m-auto">
+              <a class="nav-link text-success" href="tickets.html">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- FIN NAVBAR HEADER -->
+
+<section class="hero">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2500">
+        <img src="./images/ba1.jpg" class="img-fluid" alt="Buenos Aires-1"/>
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="./images/ba2.jpg" class="img-fluid" alt="Buenos Aires-2"/>
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="./images/ba3.jpg" class="img-fluid" alt="Buenos Aires-3"/>
+      </div>
+    </div>
+  </div>
+
+      <!-- FIN CARROUSEL FOTOS -->
+
+      <div class="hero-cta-container">
+        <div class="hero-cta">
+          <h4 class="card-title mx-4 text-white">Conf Bs As</h4>
+          <p class="p-3 gap-2 d-flex flex-column text-white">
+            Bs As llega por primera vez a Argentina. Un evento para compartir
+            con nuestra comunidad el conocimiento y experiencia de los expertos
+            que están creando el futuro de Internet. Ven a conocer a miembros
+            del evento, a otros estudiantes de Codo a Codo y a los oradores de
+            primer nivel que tenemos para ti. Te esperamos!
+          </p>
+          <button type="button" class="btn btn-outline-light">
+          <a href="#orador" class="text-decoration-none" style="color:inherit">Quiero ser orador</a> 
+          </button>
+          <button type="button" class="btn btn-success">
+          <a href="tickets.html" class=" text-decoration-none" style="color:inherit">Comprar tickets</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oradores -->
+    <section id="oradores"></section>
+    <section class="p-1 lh-1">
+      <div class="text-center d-flex flex-column gap-0">
+        <h3 class="text-center"><span style="font-size: 1rem; font-weight: 400;">CONOCE A LOS</span><br>ORADORES</h3>
+      </div>
+      <div class="row justify-content-center mt-2 gap-4 flex-wrap">
+        <div class="col-lg-3 col-sm-6 card p-0">
+          <img src="./images/steve.jpg" class="card-img-top w-100" alt="Steve Jobs"/>
+
+          <div class="p-3">
+            <span class="badge text-bg-warning d-inline-block">JavaScript</span>
+            <span class="badge text-bg-info text-white d-inline-block"
+              >React</span
+            >
+            <h5>Steve Jobs</h5>
+            <p class="pt-2 m-0 lh-base">
+              Empresario, diseñador industrial, magnate empresarial, propietario de medios
+              e inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple.
+              Fundador de la empresa NeXT Computer Inc. y de la empresa The Graphics Group
+              que se haria mundialmente famosa como Pixar.
+              Máximo accionista individual de The Walt Disney Company.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3  col-sm-6 card p-0">
+          <img src="./images/bill.jpg" class="card-img-top w-100" alt="Bill Gates"/>
+
+          <div class="p-3">
+            <span class="badge text-bg-warning d-inline-block">JavaScript</span>
+            <span class="badge text-bg-info text-white d-inline-block"
+              >React</span
+            >
+            <h5>Bill Gates</h5>
+            <p class="pt-2 m-0 lh-base">
+              Desarrollador de software, inversor, autor y filántropo estadounidense.
+              Es cofundador de Microsoft. Ocupó los cargos de presidente, director ejecutivo (CEO),
+              presidente y arquitecto jefe de software. Fue uno de los principales empresarios de la
+              revolución de las microcomputadoras de las décadas de 1970 y 1980.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 card p-0">
+          <img src="./images/ada.jpeg" class="card-img-top w-100" alt="Ada Lovelace"/>
+
+          <div class="p-3">
+            <span class="badge text-bg-secondary d-inline-block">Negocios</span>
+            <span class="badge text-bg-danger d-inline-block">Startups</span>
+            <h5>Ada Lovelace</h5>
+            <p class="pt-2 m-0 lh-base">
+              Matemática y escritora británica, célebre por su trabajo acerca de la computadora mecánica
+              de uso general de Charles Babbage, la denominada máquina analítica.
+              Fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro
+              y en haber publicado lo que se reconoce hoy como el primer algoritmo,
+              por lo que se le considera como la primera programadora de ordenadores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="honolulu">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img
+            src="./images/honolulu.jpg"
+            class="img-fluid max"
+            alt="Foto de playa"
+            
+          />
+        </div>
+        <div class="col-md-6 p-3 gap-2 d-flex flex-column">
+          <h4>Bs As - Octubre</h4>
+          <p>
+            Buenos Aires es la provincia y localidad mas grande del estado de
+            Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre
+            las principales ciudades estadounidenses. Aunque el nombre de
+            Honolulu se refiere al área urbana en la costa sureste de la isla de
+            Ohau, la ciudad y el condado de Honolulu han formado una ciudad
+            condado consolidada que cubre toda la ciudad (aproximadamente 600
+            km² de superficie).
+          </p>
+          <button type="button" class="btn btn-outline-light w-25">
+            <a href="https://es.wikipedia.org/wiki/Buenos_Aires" target="_blank" class="text-decoration-none" style="color:inherit">Conocé más</a>
+          </button>
+        </div>
+    </section>
+
+    <section class="pt-1 lh-1">
+      <div class="text-center d-flex flex-column">
+        <h4 class="text-center"><span style="font-size: .8rem; font-weight: 400;">CONVIÉRTETE EN UN</span><br>ORADOR</h4><section id="orador"></section>
+        <p class="pt-1 lh-1">
+          Anótate como orador para dar una charla ignite.
+          ¡Cuéntanos de qué quieres hablar!
+        </p>
+      </div>
+      <form>
+        <div class="mt-3 col-md-6 mx-auto d-flex gap-1">
+          <input class="form-control" id="name" placeholder="Nombre" />
+          <input class="form-control" id="lastName" placeholder="Apellido" />
+        </div>
+        <div class="mt-4 col-md-6 mx-auto">
+          <textarea class="form-control" id="description" rows="3" placeholder="¿Sobre qué quieres hablar?" style="font-size: large;"></textarea>
+          <div id="descriptionHelp" class="form-text">
+            Recuerda incluir un título para tu charla.
+          </div>
+        </div>
+        <div class="mt-4 col-md-6 mx-auto">
+          <button class="btn btn-success w-100" type="submit" id="btnEnviar">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="py-4 mt-4">
+      <ul class="nav justify-content-center gap-2">
+        <li class="nav-item">
+          <a href="https://www.google.com" target="_blank" class="nav-link px-3 text-white">Preguntas frecuentes</a>
+        </li>
+        <li class="nav-item">
+          <a href="exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="nav-link px-3 text-white">Contactanos</a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary">
+                  <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nuevo mensaje</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label text-dark">Nombre:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label text-dark">Mensaje:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.google.com" target="_blank" class="nav-link px-3 text-white">Prensa</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.google.com" target="_blank" class="nav-link px-3 text-white">Conferencias</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.google.com" target="_blank" class="nav-link px-3 text-white">Términos y condiciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.google.com" target="_blank" class="nav-link px-3 text-white">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.google.com" target="_blank" class="nav-link px-3 text-white">Estudiantes</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
